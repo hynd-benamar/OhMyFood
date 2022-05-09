@@ -139,18 +139,44 @@ p {
     width: 20%;
     height: 100%;
     display: none;
-    /*transform: translateX(100px);
-    transition: all 700ms;*/
+
 }
 
-main ul li button:hover .check,
 main ul li button:focus .check,
 main ul li button:active .check,
-main ul li button:target .check,
-main ul li button:visited .check {
+main ul li button:target .check {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: slide 0.4s linear;
+}
+
+@keyframes slide {
+    0% {
+        display: flex;
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+.fa-check-circle {
+    animation: rotation 0.4s linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+
 }
 
 main ul:nth-child(4) li:nth-child(5) {
