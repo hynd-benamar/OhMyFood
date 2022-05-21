@@ -26,7 +26,7 @@ li {
     z-index: 1;
     width: 1px;
     height: 1px;
-    background-color: rgba(17, 17, 17, 0.8);
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,6 +151,7 @@ header img {
     width: 40%;
     max-width: 330px;
     margin: 20px 0 20px;
+
 }
 
 /***********bouton violet dégradé*************/
@@ -180,8 +181,43 @@ header img {
 
 }
 
-/**********************************************************/
+/********************LE COEUR******************************/
+.coeur {
+    width: 27px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: trasparent;
+    position: relative;
 
+}
+
+.far {
+    font-size: 26px;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.fas {
+    font-size: 26px;
+    color: transparent;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.coeur:focus .fas {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+
+}
+
+.coeur:focus .far {
+    display: none;
+}
 
 /**********************************************************/
 footer {

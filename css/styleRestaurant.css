@@ -89,11 +89,37 @@ main ul li {
     margin: 20px 0 20px 0;
     height: 95px;
     width: 100%;
+    animation: apparition 3s linear;
+}
 
+@keyframes apparation {
+    0% {
+        opacity: 0;
+        margin-top: 40px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 20px;
+        background-color: coral;
+
+    }
+}
+
+main ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+main ul li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+main ul li:nth-child(3) {
+    animation-delay: 2s;
 }
 
 .text {
-    width: 65%;
+    width: 82%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -101,8 +127,25 @@ main ul li {
     justify-content: space-evenly;
     text-align: start;
     text-overflow: ellipsis;
-
 }
+
+main ul li button:focus .text,
+main ul li button:active .text,
+main ul li button:target .text {
+    width: 65%;
+    animation: width 0.4s linear;
+}
+
+@keyframes width {
+    0% {
+        width: 82%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
 
 h3 {
     font-size: min(max(16px, 5vw), 24px);

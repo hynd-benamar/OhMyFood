@@ -31,10 +31,10 @@
     </header>
     <main class="recherche">
         <form>
-            <button>
+            <div class="divSearch">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>Paris, Belleville</span>
-            </button>
+                <input class="zoneSearch" type="search" id="ville-search" placeholder="Paris, Belleville">
+            </div>
             <div>
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -46,27 +46,27 @@
         <section class="sectionFonctionmt">
             <h2>Fonctionnement</h2>
             <ul>
-                <a href="#">
-                    <span>1</span>
-                    <li>
+                <li>
+                    <button class="fonctionnement">
+                        <span>1</span>
                         <i class="fas fa-mobile-alt"></i>
                         Choisissez un restaurant
-                    </li>
-                </a>
-                <a href="#">
-                    <span>2</span>
-                    <li>
+                    </button>
+                </li>
+                <li>
+                    <button class="fonctionnement">
+                        <span>2</span>
                         <i class="fas fa-list-ul"></i>
                         Composez votre menu
-                    </li>
-                </a>
-                <a href="#">
-                    <span>3</span>
-                    <li>
+                    </button>
+                </li>
+                <li>
+                    <button class="fonctionnement">
+                        <span>3</span>
                         <i class="fas fa-store"></i>
                         Dégustez au restaurant
-                    </li>
-                </a>
+                    </button>
+                </li>
             </ul>
         </section>
         <section class="sectionResto">
@@ -85,6 +85,9 @@
                     </a>
                     <button class="coeur">
                         <i class="fas fa-heart"></i>
+                        <!--plein-->
+                        <i class="far fa-heart"></i>
+                        <!--vide+border-->
                     </button>
                 </li>
                 <li>
@@ -115,6 +118,9 @@
                     </a>
                     <button class="coeur">
                         <i class="fas fa-heart"></i>
+                        <!--plein-->
+                        <i class="far fa-heart"></i>
+                        <!--vide+border-->
                     </button>
                 </li>
                 <li>
@@ -129,6 +135,9 @@
                     </a>
                     <button class="coeur">
                         <i class="fas fa-heart"></i>
+                        <!--plein-->
+                        <i class="far fa-heart"></i>
+                        <!--vide+border-->
                     </button>
                 </li>
             </ul>
