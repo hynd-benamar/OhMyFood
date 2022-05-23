@@ -187,35 +187,36 @@ header img {
     height: 25px;
     cursor: pointer;
     border: none;
-    background-color: trasparent;
-    position: relative;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
 
 }
 
-.far {
-    font-size: 26px;
+#coeurVide {
+    font-size: 28px;
     color: black;
     position: absolute;
     left: 0;
     top: -1px;
 }
 
-.fas {
-    font-size: 26px;
+#coeurPlein {
+    font-size: 28px;
     color: transparent;
     position: absolute;
     left: 0;
     top: -1px;
 }
 
-.coeur:focus .fas {
+.coeur:focus #coeurPlein {
     background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
 
 }
 
-.coeur:focus .far {
+.coeur:focus #coeurVide {
     display: none;
 }
 
