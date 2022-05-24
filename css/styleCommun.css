@@ -187,37 +187,120 @@ header img {
     height: 25px;
     cursor: pointer;
     border: none;
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
+    background-color: white;
+    position: relative;
 
 }
 
-#coeurVide {
-    font-size: 28px;
-    color: black;
-    position: absolute;
-    left: 0;
-    top: -1px;
-}
-
-#coeurPlein {
+.fa-heart {
     font-size: 28px;
     color: transparent;
     position: absolute;
     left: 0;
     top: -1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
 }
 
-.coeur:focus #coeurPlein {
+.coeur:focus .fa-heart {
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    animation: remplissage 0.2s forwards;
+    -webkit-text-stroke-width: 0;
 
 }
 
-.coeur:focus #coeurVide {
-    display: none;
+@keyframes remplissage {
+    0% {
+        background-image: linear-gradient(175deg, transparent 100%);
+    }
+
+    5% {
+        background-image: linear-gradient(175deg, transparent 70%, #fc91de 1%, #a778e2 2%);
+    }
+
+    10% {
+        background-image: linear-gradient(175deg, transparent 90%, #fc91de 5%, #a778e2 5%);
+    }
+
+    15% {
+        background-image: linear-gradient(175deg, transparent 85%, #fc91de 7%, #a778e2 8%);
+    }
+
+    20% {
+        background-image: linear-gradient(175deg, transparent 80%, #fc91de 10%, #a778e2 10%);
+    }
+
+    25% {
+        background-image: linear-gradient(175deg, transparent 75%, #fc91de 12%, #a778e2 13%);
+    }
+
+    30% {
+        background-image: linear-gradient(175deg, transparent 70%, #fc91de 15%, #a778e2 15%);
+    }
+
+    35% {
+        background-image: linear-gradient(175deg, transparent 65%, #fc91de 17%, #a778e2 18%);
+    }
+
+    40% {
+        background-image: linear-gradient(175deg, transparent 60%, #fc91de 20%, #a778e2 20%);
+    }
+
+    45% {
+        background-image: linear-gradient(175deg, transparent 55%, #fc91de 22%, #a778e2 23%);
+    }
+
+    50% {
+        background-image: linear-gradient(175deg, transparent 50%, #fc91de 25%, #a778e2 25%);
+    }
+
+    55% {
+        background-image: linear-gradient(175deg, transparent 45%, #fc91de 27%, #a778e2 28%);
+    }
+
+    60% {
+        background-image: linear-gradient(175deg, transparent 40%, #fc91de 30%, #a778e2 30%);
+    }
+
+    65% {
+        background-image: linear-gradient(175deg, transparent 35%, #fc91de 32%, #a778e2 33%);
+    }
+
+    70% {
+        background-image: linear-gradient(175deg, transparent 30%, #fc91de 35%, #a778e2 35%);
+    }
+
+    75% {
+        background-image: linear-gradient(175deg, transparent 25%, #fc91de 37%, #a778e2 38%);
+    }
+
+    80% {
+        background-image: linear-gradient(175deg, transparent 20%, #fc91de 40%, #a778e2 40%);
+    }
+
+    85% {
+        background-image: linear-gradient(175deg, transparent 15%, #fc91de 42%, #a778e2 43%);
+    }
+
+    90% {
+        background-image: linear-gradient(175deg, transparent 10%, #fc91de 45%, #a778e2 45%);
+    }
+
+    95% {
+        background-image: linear-gradient(175deg, transparent 5%, #fc91de 47%, #a778e2 48%);
+    }
+
+    100% {
+        background-image: linear-gradient(175deg, #fc91de, #a778e2);
+    }
+}
+
+.coeur:visited fa-heart {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(175deg, #fc91de, #a778e2);
 }
 
 /**********************************************************/
