@@ -159,9 +159,9 @@ header img {
 .btnViolet {
     border-radius: 40px;
     border-width: 0;
-    height: 65px;
+    height: 70px;
     width: 100%;
-    max-width: 330px;
+    max-width: 310px;
     padding: 0;
     background: linear-gradient(175deg, #FF79DA, #9356DC);
     box-shadow: 0px 2px 6px 0px #c6c6c6;
@@ -183,21 +183,21 @@ header img {
 
 /********************LE COEUR******************************/
 .coeur {
-    width: 27px;
-    height: 25px;
     cursor: pointer;
     border: none;
-    background-color: white;
-    position: relative;
+    background-color: transparent;
+    height: fit-content;
+}
 
+.coeurIndex {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
 }
 
 .fa-heart {
     font-size: 28px;
     color: transparent;
-    position: absolute;
-    left: 0;
-    top: -1px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 

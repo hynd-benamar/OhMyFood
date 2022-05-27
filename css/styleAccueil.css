@@ -15,24 +15,32 @@ form {
     background-color: #ede9e9;
 }
 
+.fa-map-marker-alt {
+    font-size: min(max(20px, 4vw), 30px);
+}
+
 .zoneSearch {
     font-weight: 600;
-    width: 40%;
-    margin-left: 22px;
+    width: 45%;
+    margin-left: 10px;
     border: none;
     color: black;
-    font-size: 3.5vw;
+    font-size: min(max(20px, 4.5vw), 26px);
     background-color: #ede9e9;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 form div:nth-child(2) {
-    margin: 0 12%;
+    margin: 50px 12% 20px 12%;
 }
 
 h1 {
     text-align: center;
-    font-size: min(max(18px, 5vw), 28px);
-    font-weight: 700;
+    font-size: min(max(20px, 5.5vw), 35px);
+    font-weight: 800;
     width: 100%;
     margin: 15px 0;
 }

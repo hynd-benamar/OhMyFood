@@ -26,8 +26,9 @@ figcaption {
     position: absolute;
     bottom: 0;
     background-color: white;
-    width: 100%;
+    width: 88%;
     height: 100px;
+    padding: 30px 6% 0 6%;
     border-radius: 50px 50px 0 0;
     display: flex;
     flex-direction: row;
@@ -39,7 +40,6 @@ h1 {
     font-family: shrikhand;
     font-size: min(max(20px, 7vw), 48px);
     letter-spacing: 1px;
-    padding: 7% 0 0 6%;
     margin: 0;
 }
 
@@ -66,6 +66,41 @@ h2 {
     width: 60px;
 }
 
+/**********animation d'apparaition du Menu***************/
+
+
+main ul li {
+    opacity: 0;
+    animation: deplacement 1.4s forwards;
+}
+
+@keyframes deplacement {
+    0% {
+
+        bottom: -50px;
+        position: relative;
+    }
+
+    80% {
+        bottom: -20px;
+    }
+
+    100% {
+        position: static;
+        opacity: 1;
+    }
+}
+
+.liDeux {
+    animation-delay: 0.5s;
+}
+
+main ul li:last-child {
+    animation-delay: 1s;
+}
+
+/**************************************************************/
+/**************Menu******************/
 main ul li button {
     margin: 0;
     padding: 0;
@@ -89,34 +124,9 @@ main ul li {
     margin: 20px 0 20px 0;
     height: 95px;
     width: 100%;
-    animation: apparition 3s linear;
 }
 
-@keyframes apparation {
-    0% {
-        opacity: 0;
-        margin-top: 40px;
-    }
 
-    100% {
-        opacity: 1;
-        margin-top: 20px;
-        background-color: coral;
-
-    }
-}
-
-main ul li:nth-child(1) {
-    animation-delay: 0s;
-}
-
-main ul li:nth-child(2) {
-    animation-delay: 1s;
-}
-
-main ul li:nth-child(3) {
-    animation-delay: 2s;
-}
 
 .text {
     width: 82%;
@@ -128,24 +138,6 @@ main ul li:nth-child(3) {
     text-align: start;
     text-overflow: ellipsis;
 }
-
-main ul li button:focus .text,
-main ul li button:active .text,
-main ul li button:target .text {
-    width: 65%;
-    animation: width 0.4s linear;
-}
-
-@keyframes width {
-    0% {
-        width: 82%;
-    }
-
-    100% {
-        width: 65%;
-    }
-}
-
 
 h3 {
     font-size: min(max(16px, 5vw), 24px);
@@ -183,6 +175,24 @@ p {
     height: 100%;
     display: none;
 
+}
+
+/************animation bouton check des menus**********/
+main ul li button:focus .text,
+main ul li button:active .text,
+main ul li button:target .text {
+    width: 65%;
+    animation: width 0.4s linear;
+}
+
+@keyframes width {
+    0% {
+        width: 82%;
+    }
+
+    100% {
+        width: 65%;
+    }
 }
 
 main ul li button:focus .check,
