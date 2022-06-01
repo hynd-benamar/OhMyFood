@@ -71,27 +71,24 @@ h2 {
 
 main ul li {
     opacity: 0;
-    animation: deplacement 1.4s forwards;
+    animation: deplacement 2s forwards;
 }
 
 @keyframes deplacement {
     0% {
-
+        opacity: 0;
         bottom: -50px;
         position: relative;
     }
 
-    80% {
-        bottom: -20px;
-    }
-
     100% {
-        position: static;
+
+        bottom: 0px;
         opacity: 1;
     }
 }
 
-.liDeux {
+main ul li:nth-of-type(2) {
     animation-delay: 0.5s;
 }
 
