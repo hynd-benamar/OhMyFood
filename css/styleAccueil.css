@@ -166,12 +166,11 @@ figcaption p {
 }
 
 /****************************media queries*****************************/
-/********** pour tous les écrans de plus de 768px *******************/
+/********** pour tous les écrans de plus de 860px *******************/
 @media screen and (min-width: 860px) {
     section {
         padding: 50px 3%;
         width: 94%;
-
     }
 
     h2 {
@@ -234,18 +233,5 @@ figcaption p {
 
     .nouveau {
         top: 20px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    footer img {
-        width: 10%;
-        height: fit-content;
-        margin: 0;
     }
 }

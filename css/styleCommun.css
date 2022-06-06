@@ -340,3 +340,37 @@ footer ul li:nth-child(2) i {
 footer li a {
     color: #e6e6e6;
 }
+
+
+
+
+
+/****************************media queries*****************************/
+/********** pour tous les écrans de plus de 860px *******************/
+@media screen and (min-width: 860px) {
+
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer img {
+        width: 10%;
+        height: fit-content;
+        margin: 0;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1300px;
+        margin: auto;
+    }
+}
