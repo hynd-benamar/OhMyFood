@@ -102,9 +102,14 @@ h2 {
 .sectionFonctionmt ul li button:focus,
 .sectionFonctionmt ul li button:focus i {
     /*après le clic*/
-    background-color: #dabcff;
+    background-color: #dbc4f86e;
     color: #9356dc;
 }
+
+.sectionFonctionmt ul li button:focus p {
+    color: #000000;
+}
+
 
 /**********************Restaurant**************************/
 h3 {
