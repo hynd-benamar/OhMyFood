@@ -74,7 +74,7 @@ h2 {
 /**********animation d'apparaition du Menu***************/
 
 
-main ul li {
+main ul li:not(.menuTitre) {
     opacity: 0;
     animation: deplacement 2s forwards;
 }
@@ -93,25 +93,25 @@ main ul li {
     }
 }
 
-main ul li:nth-of-type(1) {
+main ul li:nth-of-type(2) {
     animation-delay: 0.7s;
 }
 
-main ul li:nth-of-type(2) {
+main ul li:nth-of-type(3) {
     animation-delay: 1.4s;
 }
 
-main ul li:nth-of-type(3) {
+main ul li:nth-of-type(4) {
     animation-delay: 2.1s;
 }
 
-main ul li:nth-of-type(4) {
+main ul li:nth-of-type(5) {
     animation-delay: 2.8s;
 }
 
 /**************************************************************/
 /**************Menu******************/
-main ul li section {
+main ul li article {
     margin: 0;
     padding: 0;
     border: none;
@@ -130,13 +130,11 @@ main ul li section {
 
 }
 
-main ul li {
+main ul li:not(.menuTitre) {
     margin: 20px 0 20px 0;
     height: 95px;
     width: 100%;
 }
-
-
 
 .text {
     width: 82%;
@@ -188,11 +186,11 @@ p {
 }
 
 /************animation bouton check des menus**********/
-main ul li section:focus .text,
-main ul li section:active .text,
-main ul li section:target .text {
-    width: 65%;
-    animation: width 0.4s linear;
+main section ul li article:focus .text,
+main section ul li article:active .text,
+main section ul li article:target .text {
+    width: 60%;
+    animation: width 0.4s forwards;
 }
 
 @keyframes width {
@@ -205,13 +203,13 @@ main ul li section:target .text {
     }
 }
 
-main ul li section:focus .check,
-main ul li section:active .check,
-main ul li section:target .check {
+main section ul li article:focus .check,
+main section ul li article:active .check,
+main section ul li article:target .check {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: slide 0.4s linear;
+    animation: slide 0.4s forwards;
 }
 
 @keyframes slide {
@@ -289,7 +287,7 @@ main ul:nth-child(4) div:nth-child(6) {
         padding: 0;
     }
 
-    main ul li {
+    main ul li:not(.menuTitre) {
         margin: 30px 0 30px 0;
         height: 90px;
         width: 100%;
