@@ -185,10 +185,9 @@ p {
 
 }
 
-/************animation bouton check des menus**********/
-main section ul li article:focus .text,
-main section ul li article:active .text,
-main section ul li article:target .text {
+/************animation bouton check des menus*************/
+
+main section ul li article:hover .text {
     width: 60%;
     animation: width 0.4s forwards;
 }
@@ -199,13 +198,11 @@ main section ul li article:target .text {
     }
 
     100% {
-        width: 65%;
+        width: 60%;
     }
 }
 
-main section ul li article:focus .check,
-main section ul li article:active .check,
-main section ul li article:target .check {
+main section ul li article:hover .check {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,11 +237,11 @@ main section ul li article:target .check {
 
 }
 
-main ul:nth-child(4) li:nth-child(5) {
+main section ul:nth-child(4) li:nth-child(5) {
     margin-bottom: 70px;
 }
 
-main ul:nth-child(4) div:nth-child(6) {
+main section ul:nth-child(4) div:nth-child(6) {
     width: 100%;
     height: auto;
     display: flex;
@@ -294,11 +291,11 @@ main ul:nth-child(4) div:nth-child(6) {
     }
 
     h2 {
-        font-size: min(max(18px, 1vw), 26px);
+        font-size: min(max(18px, 1.4vw), 27px);
     }
 
     h3 {
-        font-size: min(max(16px, 1vw), 25px);
+        font-size: min(max(17px, 1.2vw), 26px);
     }
 
     p {
