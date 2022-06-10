@@ -4,7 +4,6 @@ body {
 
 a {
     text-decoration: none;
-    text-decoration-color: none;
 }
 
 .menu {
@@ -60,6 +59,7 @@ main section ul {
 }
 
 h2 {
+    display: inline;
     font-size: min(max(18px, 5vw), 24px);
     margin: 5px 0;
     font-weight: 100;
@@ -111,7 +111,7 @@ main ul li:nth-of-type(4) {
 
 /**************************************************************/
 /**************Menu******************/
-main ul li button {
+main ul li section {
     margin: 0;
     padding: 0;
     border: none;
@@ -188,9 +188,9 @@ p {
 }
 
 /************animation bouton check des menus**********/
-main ul li button:focus .text,
-main ul li button:active .text,
-main ul li button:target .text {
+main ul li section:focus .text,
+main ul li section:active .text,
+main ul li section:target .text {
     width: 65%;
     animation: width 0.4s linear;
 }
@@ -205,9 +205,9 @@ main ul li button:target .text {
     }
 }
 
-main ul li button:focus .check,
-main ul li button:active .check,
-main ul li button:target .check {
+main ul li section:focus .check,
+main ul li section:active .check,
+main ul li section:target .check {
     display: flex;
     align-items: center;
     justify-content: center;
